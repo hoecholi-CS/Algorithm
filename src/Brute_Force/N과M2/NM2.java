@@ -1,8 +1,8 @@
-package Brute_Force;
+package Brute_Force.N과M2;
 
 import java.util.Scanner;
 
-public class NM1 {
+public class NM2 {
     static int N;
     static int M;
     static boolean[] visit;
@@ -21,10 +21,13 @@ public class NM1 {
 
     static void dfs(int k) {
         if (k == M + 1) {
-            for (int p = 1; p < list.length; ++p) {
-                System.out.print(list[p] + " ");
+            if (checkSuyeol()) {
+                for (int p = 1; p < list.length; ++p) {
+                    System.out.print(list[p] + " ");
+                }
+                System.out.println();
+                return;
             }
-            System.out.println();
             return;
         }
 
@@ -37,5 +40,14 @@ public class NM1 {
             }
         }
     }
-}
 
+    static boolean checkSuyeol() {
+        for (int i = 1; i < list.length - 1; ++i) {
+            if (list[i] >= list[i + 1]) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+}
