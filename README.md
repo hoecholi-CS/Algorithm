@@ -4,8 +4,16 @@
 
 - ### `N과 M`
     - [N과 M(1)](https://github.com/hoecholi-CS/Algorithm/blob/master/src/Brute_Force/NM1.java)
-    - [N과 M(2)]()
+    - [N과 M(2)](https://github.com/hoecholi-CS/Algorithm/blob/master/src/Brute_Force/N%EA%B3%BCM2/NM2.java)
     - [N과 M(3)]()
+
+- ### `Permutation`
+
+
+## `Hash`
+
+- [BOJ 1920]()
+
 
 ### `2021 KAKAO BLIND RECRUITMENT`
 
